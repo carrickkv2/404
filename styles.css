@@ -9,10 +9,11 @@
 }
 
 .svg_container {
-    margin-top: 50px;
+    margin-top: 3.125rem;
     text-align: center;
     max-width: 700px;
-    margin: 0 auto;   
+    margin: 0 auto;  
+    position: relative; 
 }
 
 /* -------------------------- */
@@ -20,7 +21,7 @@
 /* -------------------------- */
 
 #tree1, #tree2, #tree3 {
-     animation: changeColor 2s infinite alternate; 
+    animation: changeColor 2s infinite alternate; 
 }
 
 @keyframes changeColor {
@@ -88,16 +89,17 @@
     font-family: 'Merriweather', serif;
     font-size: 140px;
     position: relative;
-    top: -530px;
-    left: 840px;
+    top: -33.125rem;
+    left: 8.75rem;
     display: inline-block;
     transform: rotate(-22deg) skew(-5deg);
     color: #eb9292;
+    overflow: hidden;
 }
 
 .oops {
     position: relative;
-    bottom: 100px;
+    bottom: 6.25rem;
     text-align: center;
 }
 
@@ -106,27 +108,27 @@
 .oops_text {
     color: #eb9292;
     font-family: 'Merriweather', serif;
-    font-size: 55px;
-    margin-bottom: 30px;
+    font-size: 3.4375rem;
+    margin-bottom: 1.875rem;
 }
 
 .we_cant {
     font-family: 'Merriweather', serif;
-    font-size: 18.5px;
+    font-size: 1.15625rem;
 }
 
 .helpful {
     font-family: 'Josefin Sans', sans-serif;
     position: relative;
     text-align: center;
-    bottom: 60px;
+    bottom: 3.75rem;
     color: #606060;
-    font-size: 21px;
+    font-size: 1.3125rem;
 }
 
 .helpful  li, a {
     color: rgba(0, 0, 0, 0.733);
-    margin-top: 17px;
+    margin-top: 1.0625rem;
     list-style: none;
     text-decoration: underline;
     display: inline-block;
@@ -134,3 +136,108 @@
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
 }
+
+/* -------------------------- */
+/* MEDIA QUERIES */
+/* -------------------------- */
+
+@media only screen and (max-width: 767px) {
+    .svg_container,
+    .oops,
+    .helpful {
+        padding: 1rem;
+    }
+
+    .text_404 {
+        font-family: 'Merriweather', serif;
+        font-size: 8rem;
+        left: 10rem;
+        transform: rotate(-22deg) skew(-5deg);
+        color: #eb9292;
+    }
+}
+
+@media only screen and (max-width: 679px) {
+    .text_404 {
+        font-family: 'Merriweather', serif;
+        position: relative;
+        font-size: 8rem;
+        top: -30rem;
+        left: 8rem;
+        transform: rotate(-22deg) skew(-5deg);
+        color: #eb9292;
+    }
+}
+
+@media only screen and (max-width: 586px) {
+    .text_404 {
+        font-family: 'Merriweather', serif;
+        position: relative;
+        font-size: 8rem;
+        top: -28rem;
+        left: 8rem;
+        transform: rotate(-22deg) skew(-5deg);
+        color: #eb9292;
+    }
+}
+
+@media only screen and (max-width: 565px) {
+    .text_404 {
+        font-family: 'Merriweather', serif;
+        position: relative;
+        font-size: 8rem;
+        top: -26rem;
+        left: 8rem;
+        transform: rotate(-22deg) skew(-5deg);
+        color: #eb9292;
+    }
+}
+
+@media only screen and (max-width: 525px) {
+    .text_404 {
+        font-family: 'Merriweather', serif;
+        position: relative;
+        font-size: 8rem;
+        top: -24rem;
+        left: 7rem;
+        transform: rotate(-22deg) skew(-5deg);
+        color: #eb9292;
+    }
+
+}
+@media only screen and (max-width: 505px) {
+    .text_404 {
+        font-family: 'Merriweather', serif;
+        position: relative;
+        font-size: 7rem;
+        top: -24rem;
+        left: 6rem;
+        transform: rotate(-22deg) skew(-5deg);
+        color: #eb9292;
+    }
+
+}
+@media only screen and (max-width: 455px) {
+    .text_404 {
+        font-family: 'Merriweather', serif;
+        position: relative;
+        font-size: 7rem;
+        top: -22.5rem;
+        left: 6rem;
+        transform: rotate(-22deg) skew(-5deg);
+        color: #eb9292;
+    }
+
+}
+
+@media only screen and (max-width: 361px) {
+        .text_404 {
+            font-family: 'Merriweather', serif;
+            font-size: 5rem;
+            top: -18rem;
+            left: 5rem;
+            transform: rotate(-22deg) skew(-5deg);
+            color: #eb9292;
+        }
+}
+
