@@ -1,0 +1,136 @@
+/* -------------------------- */
+/* BASIC SETUP */
+/* -------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.svg_container {
+    margin-top: 50px;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;   
+}
+
+/* -------------------------- */
+/* ANIMATIONS */
+/* -------------------------- */
+
+#tree1, #tree2, #tree3 {
+     animation: changeColor 2s infinite alternate; 
+}
+
+@keyframes changeColor {
+    0% {
+        fill: #dc3c3c;
+    }
+    100% {
+        fill: #d5a486;
+    }
+}
+
+#Bounce_1 {
+    animation: bounce 1s infinite ease-out alternate;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-9px);
+    }
+}
+
+#Bounce_2 {
+    /*
+    animation: bounce_1 2s infinite ease-in alternate;
+    transform-origin: right;
+    transform-box: fill-box;
+    
+    */
+}
+
+@keyframes bounce_1 {
+    0% {
+        transform: translate(0);
+    }
+
+    50% {
+        transform: translate(-5px);
+    }
+
+}
+
+#Bounce_3 {
+    animation: rotate 2s infinite alternate;
+    transform-origin: right;
+    transform-box: fill-box;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    70% {
+        transform: rotate(-8deg);
+    }
+}
+
+/* -------------------------- */
+/* TEXT */
+/* -------------------------- */
+
+.text_404 {
+    font-family: 'Merriweather', serif;
+    font-size: 140px;
+    position: relative;
+    top: -530px;
+    left: 840px;
+    display: inline-block;
+    transform: rotate(-22deg) skew(-5deg);
+    color: #eb9292;
+}
+
+.oops {
+    position: relative;
+    bottom: 100px;
+    text-align: center;
+}
+
+/* ------- PARAGRAPHS --------  #b5b5b5 */
+
+.oops_text {
+    color: #eb9292;
+    font-family: 'Merriweather', serif;
+    font-size: 55px;
+    margin-bottom: 30px;
+}
+
+.we_cant {
+    font-family: 'Merriweather', serif;
+    font-size: 18.5px;
+}
+
+.helpful {
+    font-family: 'Josefin Sans', sans-serif;
+    position: relative;
+    text-align: center;
+    bottom: 60px;
+    color: #606060;
+    font-size: 21px;
+}
+
+.helpful  li, a {
+    color: rgba(0, 0, 0, 0.733);
+    margin-top: 17px;
+    list-style: none;
+    text-decoration: underline;
+    display: inline-block;
+    padding: 0rem 0.4rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+}
