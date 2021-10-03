@@ -16,6 +16,12 @@
     position: relative; 
 }
 
+html, body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden
+}
+
 /* -------------------------- */
 /* ANIMATIONS */
 /* -------------------------- */
@@ -47,12 +53,9 @@
 }
 
 #Bounce_2 {
-    /*
     animation: bounce_1 2s infinite ease-in alternate;
     transform-origin: right;
     transform-box: fill-box;
-    
-    */
 }
 
 @keyframes bounce_1 {
@@ -86,12 +89,16 @@
 /* -------------------------- */
 
 .text_404 {
+    display: grid;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
     font-family: 'Merriweather', serif;
     font-size: 140px;
     position: relative;
     top: -33.125rem;
     left: 8.75rem;
-    display: inline-block;
+    /* display: inline-block; */
     transform: rotate(-22deg) skew(-5deg);
     color: #eb9292;
     overflow: hidden;
